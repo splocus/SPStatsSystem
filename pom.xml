@@ -16,6 +16,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <organization>
+        <name>Splocus</name>
+        <url>https://github.com/Splocusb</url>
+    </organization>
+
+    <scm>
+        <url>https://github.com/Splocusb/SPStatsSystem</url>
+        <connection>scm:git:git://github.com:Splocusb/SPStatsSystem.git</connection>
+        <developerConnection>scm:git:git@github.com:Splocusb/SPStatsSystem.git</developerConnection>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
