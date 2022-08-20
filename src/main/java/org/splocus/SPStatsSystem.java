@@ -16,7 +16,7 @@ public final class SPStatsSystem extends JavaPlugin {
 
     private StatsManager statsManager;
     private StatsConfig statsConfig;
-    private SPStatsSystemProvider spStatsSystemProvider;;
+    private static SPStatsSystemProvider spStatsSystemProvider;
 
     @Override
     public void onEnable() {
@@ -49,7 +49,7 @@ public final class SPStatsSystem extends JavaPlugin {
         statsManager.saveData();
     }
 
-    public SPStatsSystemProvider getSpStatsSystemProvider() {
+    public static SPStatsSystemProvider getSpStatsSystemProvider() {
         return spStatsSystemProvider;
     }
 }
