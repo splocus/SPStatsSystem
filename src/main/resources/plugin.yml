@@ -1,0 +1,9 @@
+name: SPStatsSystem
+version: '${project.version}'
+main: org.splocus.SPStatsSystem
+softdepend:
+  - PlaceholderAPI
+commands:
+  stat:
+    aliases:
+      - statistiker

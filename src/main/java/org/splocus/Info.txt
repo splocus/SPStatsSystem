@@ -1,0 +1,28 @@
+Saved in DATAFOLDER/playerData/<UUID>.yml
+
+Folders:
+    - GeneralStats
+    - GuardStats
+
+
+GeneralStats (Model):
+    - Kills
+    - Deaths
+    - MinedBlocks
+    - OnlineTime
+    - Omsat
+    - AntalJails
+
+GuardStats (Model):
+    - Kills
+    - Deaths
+    - JailedPlayers
+    - MinedBlocks
+    - OnlineTime
+    - FixedFængsel
+
+
+
+NOTE:
+    1 Manager for each category
+
