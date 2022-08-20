@@ -16,17 +16,21 @@ public final class SPStatsSystem extends JavaPlugin {
 
     private StatsManager statsManager;
     private StatsConfig statsConfig;
-    private static SPStatsSystemProvider spStatsSystemProvider;
+
+    private static SPStatsSystem statsSystem;
+    public static SPStatsSystem getSystem() {
+        return statsSystem;
+    }
 
     @Override
     public void onEnable() {
         // Plugin startup logic
+        statsSystem = this;
         ConfigurationSerialization.registerClass(GuardStats.class);
         ConfigurationSerialization.registerClass(PlayerStats.class);
 
         this.statsConfig = new StatsConfig(this);
         this.statsManager = new StatsManager(this);
-        spStatsSystemProvider = new SPStatsSystemProvider(statsManager);
 
         getCommand("stat").setExecutor(new StatsCommand(statsManager));
         getServer().getPluginManager().registerEvents(new JoinEvent(statsManager), this);
@@ -46,11 +50,6 @@ public final class SPStatsSystem extends JavaPlugin {
     }
 
     private void saveData() {
-        statsManager.saveData();
-    }
-
-    //Get provider
-    public static SPStatsSystemProvider getSpStatsSystemProvider() {
-        return spStatsSystemProvider;
+        //statsManager.saveData();
     }
 }
