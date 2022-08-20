@@ -38,6 +38,14 @@ public class GuardStats extends Stats implements ConfigurationSerializable {
         this.fixedJail = fixedJail;
     }
 
+    public void addJailedPlayerAmount(int amount) {
+        this.jailedPlayerAmount += amount;
+    }
+
+    public void addFixedJail(int amount) {
+        this.fixedJail += amount;
+    }
+
     @Override
     public Map<String, Object> serialize() {
         Map<String, Object> result = new HashMap<>();

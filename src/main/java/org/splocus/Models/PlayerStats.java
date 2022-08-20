@@ -39,6 +39,13 @@ public class PlayerStats extends Stats implements ConfigurationSerializable {
         this.jailAmount = jailAmount;
     }
 
+    public void addConvertedMoney(double amount) {
+        this.convertedMoney += amount;
+    }
+
+    public void addJailAmount(int amount) {
+        this.jailAmount += amount;
+    }
 
     @Override
     public Map<String, Object> serialize() {
