@@ -49,6 +49,7 @@ public final class SPStatsSystem extends JavaPlugin {
         statsManager.saveData();
     }
 
+    //Get provider
     public static SPStatsSystemProvider getSpStatsSystemProvider() {
         return spStatsSystemProvider;
     }
