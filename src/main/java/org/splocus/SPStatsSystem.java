@@ -48,4 +48,8 @@ public final class SPStatsSystem extends JavaPlugin {
     private void saveData() {
         statsManager.saveData();
     }
+
+    public SPStatsSystemProvider getSpStatsSystemProvider() {
+        return spStatsSystemProvider;
+    }
 }

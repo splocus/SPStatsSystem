@@ -11,12 +11,6 @@ public class SPStatsSystemProvider {
         this.statsManager = statsManager;
     }
 
-
-    private static SPStatsSystemProvider spStatsSystemProvider;
-    private static SPStatsSystemProvider getProvider() {
-        return spStatsSystemProvider;
-    }
-
     public StatsManager getStatsManager() {
         return statsManager;
     }
